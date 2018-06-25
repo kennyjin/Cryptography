@@ -8,7 +8,7 @@ public class EncryptCipher {
 	
 	public static void main(String[] args) {
 		encryptString("BADGERS");
-		decryptString("EBKTNAD");
+//		decryptString("EBKTNAD");
 //		System.out.println(encryptChar('B')); // problem 4
 //		System.out.println(encryptChar('C')); // problem 4
 		System.out.println(toInt('C'));
@@ -54,16 +54,5 @@ public class EncryptCipher {
 		}
 		System.out.println(String.valueOf(arr));
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
