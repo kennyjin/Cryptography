@@ -43,7 +43,10 @@ public class VigenereCipher {
 	
 	public static void main(String[] args) {
 		encryption("MAMA", "BECOOL");
-		decryption("MAMA", "NEOOAL");		
+		decryption("MAMA", "NEOOAL");
+		String input = "PVBWFGB VSJKMQA RDHRPOC BPLEZFA KZWZCIL LPVDPOC DVSOLGF BQPIMQNFPMJKVB AKYJKQK HIAKZKE COVDXVM GZYJKGO WCJAYHS BWFRNFG JNRKKCW SUEAFEA";
+		input = input.replaceAll("\\s+", "");
+		decryption("WHY", input);
 	}
 	
 	

@@ -18,11 +18,32 @@ public class FindRepeat {
 					System.out.println(str + ": " + map.get(str));
 				}
 			}
+//		String input1 = "RSZWZORRSCKGOCKPCVZTJZYTRSZYTRCNTP";
+//		HashMap <String, Integer> map = getOccurenceMap(input1);
+//		for (String str : map.keySet())
+//			{
+//				if (map.get(str) > 1)
+//				{
+//					System.out.println(str + ": " + map.get(str));
+//				}
+//			}
 	}
 	public static HashMap<String, Integer> getOccurenceMap(String input)
 	{
 		HashMap <String, Integer> map = new HashMap<String,Integer>();
 		input = input.replaceAll("\\s+", ""); // remove all the spaces in the String
+//		for (int i = 0; i < input.length(); i++)
+//		{
+//			String word = input.substring(i, i + 1);
+//			if (!map.containsKey(word))
+//			{
+//				map.put(word, 1);
+//			}
+//			else
+//			{
+//				map.put(word, map.get(word) + 1);
+//			}
+//		}
 		for (int i = 0; i < input.length() - 2; i++)
 		{
 			String word = input.substring(i, i + 3);
