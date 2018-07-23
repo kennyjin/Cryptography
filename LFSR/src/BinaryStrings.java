@@ -16,7 +16,8 @@ public class BinaryStrings {
 	}
 	public static void main(String[] args) {
 		//getBinaryStrings("TALK"); // HW4 Q4 a
-		encipher(getBinaryStrings("TALK"));
+	// encipher(getBinaryStrings("TALK")); // HW4 Q4 c
+		addBitArrays("100100100100100", "01100010101110011101010001000110001010111001110101"); // HW4 Q6
 	}
 	public static ArrayList<Integer> getBitArray(String bitArray)
 	{
@@ -50,5 +51,13 @@ public class BinaryStrings {
 			System.out.print(arr.get(i) ^ arr1.get(i)); // HW4 Q4 c, encipher TALK using the stream
 		}
 		System.out.println();
+	}
+	public static void addBitArrays(String bitArray1, String bitArray2) // Length of the 2 strings should be the same
+	{
+		for(int i = 0; i < bitArray1.length(); i++)
+		{
+			System.out.print(Integer.parseInt(bitArray1.substring(i, i + 1)) ^ 
+					Integer.parseInt(bitArray2.substring(i, i + 1)));
+		}
 	}
 }
