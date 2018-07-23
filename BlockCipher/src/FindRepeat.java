@@ -10,7 +10,8 @@ public class FindRepeat {
 //		map.put("AAA", map.get("AAA")+1);
 //		map.put("AAA", map.get("AAA")+1);
 //		
-		HashMap <String, Integer> map = getOccurenceMap("PVBWFGB VSJKMQA RDHRPOC BPLEZFA KZWZCIL LPVDPOC DVSOLGF BQPIMQNFPMJKVB AKYJKQK HIAKZKE COVDXVM GZYJKGO WCJAYHS BWFRNFG JNRKKCW SUEAFEA");
+		//HashMap <String, Integer> map = getOccurenceMap("PVBWFGB VSJKMQA RDHRPOC BPLEZFA KZWZCIL LPVDPOC DVSOLGF BQPIMQNFPMJKVB AKYJKQK HIAKZKE COVDXVM GZYJKGO WCJAYHS BWFRNFG JNRKKCW SUEAFEA");
+		HashMap <String, Integer> map = getOccurenceMap("GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML"); // HW4 question1
 		for (String str : map.keySet())
 			{
 				if (map.get(str) > 1)
@@ -44,9 +45,10 @@ public class FindRepeat {
 //				map.put(word, map.get(word) + 1);
 //			}
 //		}
-		for (int i = 0; i < input.length() - 2; i++)
+		int sequence_length = 5;
+		for (int i = 0; i < input.length() - (sequence_length - 1); i++)
 		{
-			String word = input.substring(i, i + 3);
+			String word = input.substring(i, i + sequence_length); // Look for 3-letter repetitive sequence
 			if (!map.containsKey(word))
 			{
 				map.put(word, 1);
