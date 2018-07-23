@@ -7,15 +7,16 @@ public class EncryptCipher {
 	}
 	
 	public static void main(String[] args) {
-		encryptString("BADGERS");
-//		decryptString("EBKTNAD");
-//		System.out.println(encryptChar('B')); // problem 4
-//		System.out.println(encryptChar('C')); // problem 4
-		System.out.println(toInt('C'));
-		System.out.println(toInt('R'));
-		System.out.println(toInt('H'));
-		System.out.println(toInt('A'));
-		encryptString("CRWWZ"); // problem 5 decrypt
+//		encryptString("BADGERS");
+////		decryptString("EBKTNAD");
+////		System.out.println(encryptChar('B')); // problem 4
+////		System.out.println(encryptChar('C')); // problem 4
+//		System.out.println(toInt('C'));
+//		System.out.println(toInt('R'));
+//		System.out.println(toInt('H'));
+//		System.out.println(toInt('A'));
+//		encryptString("CRWWZ"); // problem 5 decrypt
+		findWord();
 	}
 	public static char toChar(int i) // i has to be between 0 and 25
 	{
@@ -54,5 +55,16 @@ public class EncryptCipher {
 		}
 		System.out.println(String.valueOf(arr));
 	}
-
+	public static void findWord()
+	// This is for HW4, question 1.
+	{
+		for (int i = 0; i < 26; i++)
+		{
+			System.out.print(toChar(i));
+			System.out.print(toChar((i + 20) % 26));
+			System.out.print(" ");
+			System.out.print(toChar((i + 8) % 26));
+			System.out.println();
+		}
+	}
 }
