@@ -47,6 +47,8 @@ public class VigenereCipher {
 		String input = "PVBWFGB VSJKMQA RDHRPOC BPLEZFA KZWZCIL LPVDPOC DVSOLGF BQPIMQNFPMJKVB AKYJKQK HIAKZKE COVDXVM GZYJKGO WCJAYHS BWFRNFG JNRKKCW SUEAFEA";
 		input = input.replaceAll("\\s+", "");
 		decryption("WHY", input);
+		String input1 = "GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML"; // HW4 Q1
+		decryption("KEYS", input1);
 	}
 	
 	

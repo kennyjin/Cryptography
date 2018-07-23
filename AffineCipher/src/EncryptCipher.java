@@ -16,7 +16,7 @@ public class EncryptCipher {
 //		System.out.println(toInt('H'));
 //		System.out.println(toInt('A'));
 //		encryptString("CRWWZ"); // problem 5 decrypt
-		findWord();
+		findWord(); // the key is "KEYS"
 	}
 	public static char toChar(int i) // i has to be between 0 and 25
 	{
