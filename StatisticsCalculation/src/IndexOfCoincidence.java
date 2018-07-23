@@ -75,17 +75,18 @@ public class IndexOfCoincidence {
 		{
 			total += calculate(str);
 		}
-		return total;
+		return total / blk_length;
 	}
-	public static void printAVGs(String text)
+	public static void printAVGs(int max_blk_length, String text)
 	{
-		for (int i = 1; i <= 100; i++)
+		for (int i = 1; i <= max_blk_length; i++)
 		{
-			System.out.println("blk_length: " + i + "IC: " + calculateAVG(i, text));
+			System.out.println("blk_length: " + i + " IC: " + calculateAVG(i, text));
 		}
 	}
 	public static void main(String[] args) {
 		//calculate("GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML"); // prints the index of coincidence of text
-		printAVGs("GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML");
+		printAVGs(100,"GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML");
+		//printAVGs(4, "HOWOWHHB");
 	}
 }
