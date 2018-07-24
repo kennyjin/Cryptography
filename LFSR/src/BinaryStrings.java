@@ -16,8 +16,8 @@ public class BinaryStrings {
 	}
 	public static void main(String[] args) {
 		//getBinaryStrings("TALK"); // HW4 Q4 a
-	// encipher(getBinaryStrings("TALK")); // HW4 Q4 c
-		addBitArrays("100100100100100", "01100010101110011101010001000110001010111001110101"); // HW4 Q6
+	 encipher(getBinaryStrings("TALK")); // HW4 Q4 c
+		//addBitArrays("100100100100100", "01100010101110011101010001000110001010111001110101"); // HW4 Q6
 	}
 	public static ArrayList<Integer> getBitArray(String bitArray)
 	{
