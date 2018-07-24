@@ -85,8 +85,10 @@ public class IndexOfCoincidence {
 		}
 	}
 	public static void main(String[] args) {
+		// HW4 Q1
+		printMap(getOccurenceMap("GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML"));
 		System.out.println(calculate("GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML")); // prints the index of coincidence of text
-		printAVGs(100,"GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML");
+		printAVGs(17,"GLCFDLCYYMLYOXQLYYEZDLCLYYEZQIRYYML");
 		//printAVGs(4, "HOWOWHHB");
 	}
 }
