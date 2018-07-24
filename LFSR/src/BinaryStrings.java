@@ -8,6 +8,7 @@ public class BinaryStrings {
 		char[] arr = text.toCharArray();
 		for (int i = 0; i < arr.length; i++)
 		{
+			//System.out.println((int)arr[i]);
 			str = str.concat(Integer.toBinaryString((int)arr[i]));
 		}
 		 //System.out.println(str);
@@ -16,8 +17,9 @@ public class BinaryStrings {
 	}
 	public static void main(String[] args) {
 		//getBinaryStrings("TALK"); // HW4 Q4 a
-	 encipher(getBinaryStrings("TALK")); // HW4 Q4 c
+	// encipher(getBinaryStrings("TALK")); // HW4 Q4 c
 		//addBitArrays("100100100100100", "01100010101110011101010001000110001010111001110101"); // HW4 Q6
+	addBitArrays("01100010101110011101010001000110001010111001110101", "11110000111100001111000011110000111100001111000011" );
 	}
 	public static ArrayList<Integer> getBitArray(String bitArray)
 	{
