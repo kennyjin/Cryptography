@@ -10,7 +10,7 @@ public class BinaryStrings {
 		{
 			str = str.concat(Integer.toBinaryString((int)arr[i]));
 		}
-		// System.out.println(str);
+		 //System.out.println(str);
 		// System.out.println();
 		return str;
 	}
